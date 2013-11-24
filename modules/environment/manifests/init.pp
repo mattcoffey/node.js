@@ -11,6 +11,7 @@
 # Sample Usage:
 #
 class environment {
+    # Show how many jobs are running
     file { "/etc/environment":
         content => inline_template(
             "PS1='[\\u {\\j} \\W] '\n"
@@ -18,5 +19,16 @@ class environment {
         owner   => "root",
         group   => "root",
         mode    => '0644'
+    }
+
+    # Install telnet 
+    package { "telnet": 
+        provider => "yum",
+        ensure   => installed,
+    }
+
+    # Stop filewall for convenience
+    service { "iptables":
+        ensure => "stopped",
     }
 }

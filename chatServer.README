@@ -1,0 +1,10 @@
+# Simple chat server, supports multiple connections 
+# broadcast messages to all connected users
+
+# Run chat server (in background) as follows:
+node chatServer.js &
+
+# Connect from same host
+telnet 127.0.0.1 9000
+
+# To quit: ( CTRL+], quit )
