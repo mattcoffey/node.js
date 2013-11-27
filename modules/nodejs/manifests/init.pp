@@ -28,5 +28,5 @@ class nodejs {
     package { "npm": 
         provider => "yum",
         ensure   => installed,
-    }    
+    }
 }
