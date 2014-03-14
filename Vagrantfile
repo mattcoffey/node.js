@@ -19,8 +19,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     # Create a private network, which allows host-only access to the machine
     # using a specific IP.
-    # config.vm.network :private_network, ip: "192.168.56.2"
-    config.vm.network :private_network, ip: '192.168.56.2', adapter: 2, auto_config: 'false'
+    # config.vm.network :private_network, ip: '192.168.56.2', adapter: 2, auto_config: 'false'
     
     # Enable provisioning with Puppet stand alone.  Puppet manifests
     # are contained in a directory path relative to this Vagrantfile.
