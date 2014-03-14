@@ -5,7 +5,7 @@ Prerequisites:
 
 1. Install Vagrant
 2. Install Virtualbox
-3. Install git
+3. Install Git
 
 ```shell
 git clone https://github.com/mattcoffey/node.js.git
